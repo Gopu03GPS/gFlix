@@ -1,6 +1,6 @@
 import http from "./httpService";
 
-const genreEndPoint = "/auth";
+const genreEndPoint = "/genres";
 
 export function getGenres() {
     return http.get(genreEndPoint);

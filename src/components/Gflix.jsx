@@ -84,9 +84,11 @@ class Gflix extends Component {
     }
 
     render() {
-        const {length: moviesCount} = this.state.movies;
+//        const {length: moviesCount} = this.state.movies;
         const {sortColumn, pageSize, currentPage, genres, searchQuery, selectedGenre} = this.state;
         const {user} = this.props;
+
+//        if (moviesCount === 0) return <p>There are no movies on rent!</p>
 
         const { totalCount, data: movies } = this.getPageData();
 
